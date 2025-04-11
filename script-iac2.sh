@@ -3,6 +3,7 @@
 echo "Atualizando servidor..."
 
 apt update
+apt upgrade -y
 
 echo "Servidor atualizado..."
 
@@ -26,7 +27,7 @@ echo "Copiando arquivos da aplicação 'main.zip' para o diretório padrão do a
 
 cd linux-site-dio-main
 
-cp -r linux-site-dio-main/* /var/www/html/
+cp -R * /var/www/html/
 
 echo "Finalizado projeto."
 
